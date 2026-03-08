@@ -21,11 +21,11 @@ export default function DonationControls() {
     <div className="flex flex-col items-center gap-4">
       <div className="bg-base-800/80 rounded-2xl p-6 text-center w-full max-w-xl">
         <div className="text-base-200 mb-2 font-semibold">Bankverbindung</div>
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-3">
-          <div className="text-lg font-mono text-base-50">{iban}</div>
+        <div className="flex flex-col sm:flex-row items-center sm:items-center sm:justify-center gap-3">
+          <div className="text-lg font-mono text-base-50 whitespace-nowrap">{iban}</div>
           <button
             onClick={handleCopy}
-            className={`inline-flex items-center gap-2 px-4 py-2 rounded-md transition-colors font-semibold ${
+            className={`inline-flex items-center gap-2 px-4 py-2 rounded-md transition-colors font-semibold w-max ${
               copied
                 ? "bg-green-600 text-white"
                 : "bg-secondary-700 text-white hover:bg-secondary-600"

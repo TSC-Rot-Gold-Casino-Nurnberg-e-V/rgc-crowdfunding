@@ -8,14 +8,9 @@ export default function DonationControls() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
-    try {
-      await navigator.clipboard.writeText(iban);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1200);
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    } catch (ignored) {
-      // ignore
-    }
+    await navigator.clipboard.writeText(iban);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1200);
   };
 
   return (

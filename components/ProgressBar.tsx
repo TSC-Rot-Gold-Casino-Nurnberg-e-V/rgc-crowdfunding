@@ -16,9 +16,7 @@ export const ProgressBar = ({ current = 0 }: { current?: number }) => {
   return (
     <div>
       <div className="flex justify-between text-sm mb-2 text-base-300">
-        <span>
-          {current.toLocaleString("de-DE")} € gesammelt
-        </span>
+        <span>{current.toLocaleString("de-DE")} € gesammelt</span>
         <span>{GOAL.toLocaleString("de-DE")} € Ziel</span>
       </div>
       <div className="w-full bg-base-700 rounded-full h-4 overflow-hidden">

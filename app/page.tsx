@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ArrowRightIcon,
   HeartIcon,
   SparklesIcon,
   UserGroupIcon,
@@ -38,7 +37,7 @@ export default function Home() {
           </p>
           <Link
             href="#spenden"
-            className="inline-block not-prose bg-secondary-700 text-lg hover:bg-secondary-600 px-6 py-3 rounded-full transition-colors font-bold cursor-pointer !text-white"
+            className="inline-block not-prose bg-secondary-700 text-lg hover:bg-secondary-600 px-6 py-3 rounded-full transition-colors font-bold cursor-pointer text-white!"
           >
             Ich unterstütze euch!
           </Link>
@@ -102,7 +101,7 @@ export default function Home() {
                 maßgeschneiderte Kostüme, die unser Thema auch optisch
                 unterstützen.
               </p>
-              <p className="text-base-200 font-semibold text-primary-300">
+              <p className="text-base-200 font-semibol">
                 Doch Qualität hat ihren Preis.
               </p>
             </div>

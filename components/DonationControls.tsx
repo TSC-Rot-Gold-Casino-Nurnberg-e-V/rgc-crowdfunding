@@ -12,7 +12,8 @@ export default function DonationControls() {
       await navigator.clipboard.writeText(iban);
       setCopied(true);
       setTimeout(() => setCopied(false), 1200);
-    } catch (e) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    } catch (ignored) {
       // ignore
     }
   };
@@ -22,7 +23,9 @@ export default function DonationControls() {
       <div className="bg-base-800/80 rounded-2xl p-6 text-center w-full max-w-xl">
         <div className="text-base-200 mb-2 font-semibold">Bankverbindung</div>
         <div className="flex flex-col sm:flex-row items-center sm:items-center sm:justify-center gap-3">
-          <div className="text-lg font-mono text-base-50 whitespace-nowrap">{iban}</div>
+          <div className="text-lg font-mono text-base-50 whitespace-nowrap">
+            {iban}
+          </div>
           <button
             onClick={handleCopy}
             className={`inline-flex items-center gap-2 px-4 py-2 rounded-md transition-colors font-semibold w-max ${

@@ -22,22 +22,22 @@ export default function Home() {
       <section id="start">
         <BackgroundImage />
         <div className="container pt-12 pb-8 text-center">
-          <div className="flex mx-auto w-fit items-center gap-2 bg-primary-300 rounded-full text-sm text-primary-900 font-semibold px-3 py-1 mb-6">
+          <div className="flex mx-auto w-fit items-center gap-2 bg-primary-300 rounded-full text-lg text-primary-900 font-semibold px-3 py-1 mb-6">
             <SparklesIcon className="shrink-0 size-5" />
             <div>Latein A-Team · RGC Nürnberg</div>
           </div>
-          <h1 className="text-4xl mb-4 sm:text-5xl font-serif text-base-50 drop-shadow-lg drop-shadow-base-950 font-bold">
+          <h1 className="text-5xl mb-4  sm:text-6xl  font-serif text-base-50 drop-shadow-lg drop-shadow-base-950 font-bold">
             Glitzer, Leidenschaft &amp; neue Ziele:
             <br />
             Wir brauchen dich!
           </h1>
-          <p className="mb-6 sm:text-lg text-base-100 drop-shadow-lg drop-shadow-base-950">
+          <p className="mb-6 text-2xl text-base-100 drop-shadow-lg drop-shadow-base-950">
             Unterstütze das Latein A-Team des RGC Nürnberg auf dem Weg in die 1.
             Bundesliga
           </p>
           <Link
             href="#spenden"
-            className="inline-block not-prose bg-secondary-700 text-lg hover:bg-secondary-600 px-6 py-3 rounded-full transition-colors font-bold cursor-pointer text-white!"
+            className="inline-block not-prose bg-secondary-700 text-2xl hover:bg-secondary-600 px-6 py-3 rounded-full transition-colors font-bold cursor-pointer text-white!"
           >
             Ich unterstütze euch!
           </Link>
@@ -45,7 +45,7 @@ export default function Home() {
       </section>
 
       {/* Vision Section */}
-      <section id="vision" className="container mt-12 scroll-mt-16">
+      <section id="vision" className="container mt-36 scroll-mt-16">
         <div className="bg-base-800/80 rounded-3xl p-8">
           <h2 className="text-3xl font-bold text-base-50 mb-6 text-center">
             Neue Musik. Neue Schritte.
@@ -62,7 +62,9 @@ export default function Home() {
                 Optik.
               </p>
               <p className="text-base-200">
-                Dafür brauchen wir neue Outfits für unsere Mädels und Jungs.
+                Dafür brauchen wir{" "}
+                <span className="text-primary-300 font-bold">neue Outfits</span>{" "}
+                für unsere Mädels und Jungs.
               </p>
               <p className="text-base-200">
                 Unsere Lateinformation trainiert hart für den Weg in die 1.
@@ -94,14 +96,23 @@ export default function Home() {
             <div className="space-y-4">
               <p className="text-base-200">
                 Perfektion auf dem Parkett entsteht dabei nicht nur durch
-                Training, sondern auch durch das richtige Auftreten.
+                Training, sondern auch durch das{" "}
+                <span className="text-primary-300 font-bold">
+                  passende Auftreten
+                </span>
+                .
               </p>
               <p className="text-base-200">
-                Damit unsere neue Vision so richtig lebendig wird, brauchen wir
-                maßgeschneiderte Kostüme, die unser Thema auch optisch
-                unterstützen.
+                Damit unsere neue Vision so richtig lebendig wird und die
+                Outfits den speziellen Anforderungen in unserem Sport gerecht
+                werden, brauchen wir
+                <span className="text-primary-300 font-bold">
+                  {" "}
+                  maßgeschneiderte
+                </span>{" "}
+                Kostüme, die unser Thema auch optisch unterstützen.
               </p>
-              <p className="text-base-200 font-semibol">
+              <p className="text-primary-300 font-bold">
                 Doch Qualität hat ihren Preis.
               </p>
             </div>
@@ -117,7 +128,7 @@ export default function Home() {
             <HeartIcon className="size-8 shrink-0" />
           </div>
           <div className="text-4xl sm:text-5xl font-bold text-primary-300 text-center my-6">
-            12.000 €
+            15.000 €
           </div>
           <p className="text-center text-base-100 text-xl font-semibold mb-6">
             für neue Kostüme
@@ -125,12 +136,20 @@ export default function Home() {
           <ProgressBar current={0} />
           <p className="text-base-200 mt-6">
             Jeder Euro fließt direkt in Stoffe, Design und meisterliche
-            Schneiderkunst, damit wir Nürnberg wieder strahlend vertreten
+            Schneiderkunst, damit wir Nürnberg wieder{" "}
+            <span className="text-primary-300 font-bold">
+              strahlend vertreten
+            </span>{" "}
             können.
           </p>
           <p className="text-base-200 mt-4">
-            Damit förderst du direkt den Nürnberger Spitzensport und junge
-            Talente bekommen die Bühne, die sie verdienen.
+            Damit förderst du direkt den{" "}
+            <span className="text-primary-300 font-bold">
+              Nürnberger Spitzensport
+            </span>{" "}
+            und{" "}
+            <span className="text-primary-300 font-bold">junge Talente</span>{" "}
+            bekommen die Bühne, die sie verdienen.
           </p>
         </div>
       </section>
@@ -138,15 +157,15 @@ export default function Home() {
       {/* Team Section */}
       <section id="team" className="container mt-6 scroll-mt-16">
         <div className="grid sm:grid-cols-2 gap-6">
-          <div className="bg-base-800/80 flex flex-col justify-between rounded-3xl p-8 pb-6">
+          <div className="bg-base-800/80 flex flex-col gap-4 rounded-3xl p-8 pb-6">
             <div className="flex justify-between gap-2 mb-4 text-base-50">
-              <h2 className="text-3xl font-bold">Unser Team</h2>
+              <h2 className="text-3xl font-bold">Jetzt brauchen wir dich!</h2>
               <UserGroupIcon className="size-8 shrink-0" />
             </div>
-            <p className="text-base-200 mb-4">
+            <p className="text-base-200 mb-4 text-xl">
               Hilf uns, Bewegung in Erfolg zu verwandeln.
             </p>
-            <p className="text-base-200 text-lg font-semibold">
+            <p className=" text-primary-300 font-bold text-lg">
               Ob 5, 50 oder 500 Euro – deine Spende bringt uns aufs Parkett.
             </p>
           </div>
@@ -199,11 +218,13 @@ export default function Home() {
 
       {/* Donation Info */}
       <section className="container mt-6">
-        <div className="not-prose border border-base-700 rounded-3xl text-sm p-4 text-base-400">
+        <div className="not-prose border border-base-700 rounded-3xl text-lg p-4 text-base-400">
           <p>
-            Wer eine Spendenbescheinigung möchte, überweist bitte an den Verein.
-            Im Überweisungstext bitte unbedingt Name, vollständige Adresse und
-            den Zweck (Spende Kleider A-Team Latein) angeben.
+            <span className="text-primary-300 font-bold">Achtung:</span> Wer
+            eine Spendenbescheinigung möchte, überweist bitte an das oben
+            genannte Konto des Vereins. Im Überweisungstext bitte unbedingt
+            Name, vollständige Adresse und den Zweck (Spende Kleider A-Team
+            Latein) angeben.
           </p>
         </div>
       </section>

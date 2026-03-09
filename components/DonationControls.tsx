@@ -16,9 +16,11 @@ export default function DonationControls() {
   return (
     <div className="flex flex-col items-center gap-4">
       <div className="bg-base-800/80 rounded-2xl p-6 text-center w-full max-w-xl">
-        <div className="text-base-200 mb-2 font-semibold">Bankverbindung</div>
+        <div className="text-base-200 mb-2 text-lg font-semibold">
+          Bankverbindung
+        </div>
         <div className="flex flex-col sm:flex-row items-center sm:items-center sm:justify-center gap-3">
-          <div className="text-lg font-mono text-base-50 whitespace-nowrap">
+          <div className="text-2xl font-mono text-base-50 whitespace-nowrap">
             {iban}
           </div>
           <button
@@ -49,7 +51,7 @@ export default function DonationControls() {
         className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-base-700 text-base-400 opacity-60 cursor-not-allowed select-none"
         aria-disabled="true"
       >
-        PayPal (coming soon)
+        PayPal (kommt demnächst)
       </a>
     </div>
   );

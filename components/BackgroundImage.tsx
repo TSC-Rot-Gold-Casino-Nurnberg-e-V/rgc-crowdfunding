@@ -4,7 +4,7 @@ import teamImage from "../public/team.png";
 export const BackgroundImage = () => {
   return (
     // add a small top offset on narrow screens so content isn't hidden behind the hero
-    <div className="absolute -z-10 opacity-80 inset-x-0 top-16 sm:top-0 w-full">
+    <div className="absolute -z-10 opacity-80 inset-x-0 mt-24 top-32 sm:top-0 w-full">
       <Image
         src={teamImage}
         alt=""

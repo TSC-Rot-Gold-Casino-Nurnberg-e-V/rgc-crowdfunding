@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const GOAL = 12000;
+const GOAL = 15000;
 
 export const ProgressBar = ({ current = 0 }: { current?: number }) => {
   const [width, setWidth] = useState(0);

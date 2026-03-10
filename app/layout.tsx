@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
@@ -20,6 +20,12 @@ export const metadata: Metadata = {
   title: "Crowdfunding | Latein A-Team | RGC Nürnberg",
   description:
     "Unterstütze das Latein A-Team des RGC Nürnberg auf dem Weg in die 1. Bundesliga – neue Kostüme für eine neue Saison!",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({

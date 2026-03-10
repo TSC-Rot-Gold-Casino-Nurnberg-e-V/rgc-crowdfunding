@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { ScrollToSpendenLink } from "@/components/ScrollToSpendenLink";
 import {
   HeartIcon,
   SparklesIcon,
@@ -35,12 +35,9 @@ export default function Home() {
             Unterstütze das Latein A-Team des RGC Nürnberg auf dem Weg in die 1.
             Bundesliga
           </p>
-          <Link
-            href="#spenden"
-            className="inline-block not-prose bg-secondary-700 text-2xl hover:bg-secondary-600 px-6 py-3 rounded-full transition-colors font-bold cursor-pointer text-white!"
-          >
+          <ScrollToSpendenLink className="inline-block not-prose bg-secondary-700 text-2xl hover:bg-secondary-600 px-6 py-3 rounded-full transition-colors font-bold cursor-pointer text-white!">
             Ich unterstütze euch!
-          </Link>
+          </ScrollToSpendenLink>
         </div>
       </section>
 
@@ -56,17 +53,17 @@ export default function Home() {
           </h2>
           <div className="grid sm:grid-cols-2 gap-6 items-center">
             <div className="space-y-4">
-              <p className="text-base-200">
+              <p className="text-lg sm:text-base text-base-200">
                 Wenn unser A-Team in der neuen Saison das Parkett betritt, muss
                 alles stimmen: Choreografie und Bewegung, die Musik – und die
                 Optik.
               </p>
-              <p className="text-base-200">
+              <p className="text-lg sm:text-base text-base-200">
                 Dafür brauchen wir{" "}
                 <span className="text-primary-300 font-bold">neue Outfits</span>{" "}
                 für unsere Mädels und Jungs.
               </p>
-              <p className="text-base-200">
+              <p className="text-lg sm:text-base text-base-200">
                 Unsere Lateinformation trainiert hart für den Weg in die 1.
                 Bundesliga.
               </p>
@@ -94,7 +91,7 @@ export default function Home() {
               />
             </div>
             <div className="space-y-4">
-              <p className="text-base-200">
+              <p className="text-lg sm:text-base text-base-200">
                 Perfektion auf dem Parkett entsteht dabei nicht nur durch
                 Training, sondern auch durch das{" "}
                 <span className="text-primary-300 font-bold">
@@ -102,7 +99,7 @@ export default function Home() {
                 </span>
                 .
               </p>
-              <p className="text-base-200">
+              <p className="text-lg sm:text-base text-base-200">
                 Damit unsere neue Vision so richtig lebendig wird und die
                 Outfits den speziellen Anforderungen in unserem Sport gerecht
                 werden, brauchen wir
@@ -112,7 +109,7 @@ export default function Home() {
                 </span>{" "}
                 Kostüme, die unser Thema auch optisch unterstützen.
               </p>
-              <p className="text-primary-300 font-bold">
+              <p className="text-lg sm:text-base text-primary-300 font-bold">
                 Doch Qualität hat ihren Preis.
               </p>
             </div>
@@ -134,7 +131,7 @@ export default function Home() {
             für neue Kostüme
           </p>
           <ProgressBar current={0} />
-          <p className="text-base-200 mt-6">
+          <p className="text-lg sm:text-base text-base-200 mt-6">
             Jeder Euro fließt direkt in Stoffe, Design und meisterliche
             Schneiderkunst, damit wir Nürnberg wieder{" "}
             <span className="text-primary-300 font-bold">
@@ -142,7 +139,7 @@ export default function Home() {
             </span>{" "}
             können.
           </p>
-          <p className="text-base-200 mt-4">
+          <p className="text-lg sm:text-base text-base-200 mt-4">
             Damit förderst du direkt den{" "}
             <span className="text-primary-300 font-bold">
               Nürnberger Spitzensport

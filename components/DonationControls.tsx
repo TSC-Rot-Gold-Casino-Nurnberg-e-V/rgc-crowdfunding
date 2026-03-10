@@ -20,7 +20,7 @@ export default function DonationControls() {
           Bankverbindung
         </div>
         <div className="flex flex-col sm:flex-row items-center sm:items-center sm:justify-center gap-3">
-          <div className="text-2xl font-mono text-base-50 whitespace-nowrap">
+          <div className="text-sm sm:text-2xl font-mono text-base-50 whitespace-nowrap">
             {iban}
           </div>
           <button

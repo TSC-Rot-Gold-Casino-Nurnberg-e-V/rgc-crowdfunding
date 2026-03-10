@@ -42,7 +42,13 @@ export const Navigation = () => {
         </div>
         <Link
           href="#spenden"
-          className="block shrink-0 w-fit ml-2 bg-secondary-700 text-sm hover:bg-secondary-600 px-3 py-1 rounded-full transition-colors font-bold cursor-pointer !text-white"
+          className="block shrink-0 w-fit ml-2 bg-secondary-700 text-md hover:bg-secondary-600 px-3 py-1 rounded-full transition-colors font-bold cursor-pointer text-white!"
+          onClick={(e) => {
+            e.preventDefault();
+            document
+              .getElementById("spenden")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}
         >
           Jetzt spenden
         </Link>

@@ -130,7 +130,7 @@ export default function Home() {
           <p className="text-center text-base-100 text-xl font-semibold mb-6">
             für neue Kostüme
           </p>
-          <ProgressBar current={0} />
+          <ProgressBar current={5000} />
           <p className="text-lg sm:text-base text-base-200 mt-6">
             Jeder Euro fließt direkt in Stoffe, Design und meisterliche
             Schneiderkunst, damit wir Nürnberg wieder{" "}
